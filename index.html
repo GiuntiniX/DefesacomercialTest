@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defesa Comercial: Verão & Carnaval Riachuelo (Solar Edition)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --summer-orange: #ff6b35;
+            --summer-yellow: #f7c548;
+            --summer-pink: #fd2e78;
+            --text-main: #1e293b;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fffbf0;
+            color: var(--text-main);
+            background-image: 
+                radial-gradient(circle at 0% 0%, rgba(255, 107, 53, 0.1), transparent 40%),
+                radial-gradient(circle at 100% 0%, rgba(253, 46, 120, 0.1), transparent 40%),
+                radial-gradient(circle at 50% 100%, rgba(247, 197, 72, 0.15), transparent 40%);
+            background-attachment: fixed;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.08);
+            border-radius: 1.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(255, 107, 53, 0.15);
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .text-gradient-summer {
+            background: linear-gradient(to right, #ff6b35, #fd2e78);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        }
+        
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+        }
+        .reveal-on-scroll.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .data-bar-bg { background-color: #e2e8f0; border-radius: 99px; height: 10px; overflow: hidden; margin-top: 10px;}
+        .data-bar-fill { height: 100%; border-radius: 99px; width: 0; transition: width 1.5s ease-out; }
+
+        /* Classe personalizada para o link ativo do menu */
+        .nav-link-active {
+            color: #ff6b35; /* Laranja Terra */
+            font-weight: 700;
+            border-bottom: 2px solid #ff6b35;
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen pb-20">
+
+    <nav class="fixed top-0 left-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center hover:opacity-80 transition-opacity">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Terra_Logo.png" alt="Terra" class="h-8 w-auto">
+            </a>
+
+            <div class="flex items-center gap-8">
+                <a href="#" class="nav-link-active text-sm uppercase tracking-widest pb-1 transition-colors">Terra</a>
+                <a href="vivo.html" class="text-gray-300 hover:text-white font-medium text-sm uppercase tracking-widest transition-colors hover:border-b-2 hover:border-white pb-1">Vivo</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative w-full h-[65vh] min-h-[500px] flex items-center justify-center p-4 overflow-hidden pt-20">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1523381210434-271e8be1f52b?q=80&w=2070&auto=format&fit=crop');"></div>
+        <div class="absolute inset-0 bg-white/30 backdrop-blur-[2px]"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-[#fffbf0] via-transparent to-transparent"></div>
+        
+        <div class="relative z-10 max-w-5xl text-center reveal-on-scroll is-visible bg-white/80 p-8 sm:p-12 rounded-3xl shadow-2xl backdrop-blur-md">
+            <div class="flex justify-center items-center gap-3 mb-6">
+                <span class="px-4 py-1 bg-orange-100 text-orange-600 rounded-full text-xs font-bold tracking-wider uppercase border border-orange-200">Defesa Comercial</span>
+                <span class="px-4 py-1 bg-pink-100 text-pink-600 rounded-full text-xs font-bold tracking-wider uppercase border border-pink-200">Riachuelo</span>
+            </div>
+            <h1 class="text-4xl sm:text-6xl md:text-7xl font-black text-slate-800 leading-tight mb-4 drop-shadow-sm">
+                O VERÃO <br>
+                <span class="text-gradient-summer">NA PELE DO BRASIL</span>
+            </h1>
+            <p class="text-xl text-slate-600 font-light max-w-2xl mx-auto">
+                Estratégias de Moda & Carnaval baseadas em dados de <strong>62 Milhões</strong> de brasileiros.
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-8 -mt-10 relative z-20 space-y-20">
+
+        <section class="reveal-on-scroll">
+            <h2 class="text-3xl font-bold text-slate-800 mb-8 flex items-center gap-3">
+                <span class="text-3xl">📊</span> 
+                <span>Big Numbers <span class="text-base font-normal text-slate-500">(Resumo do Ecossistema)</span></span>
+            </h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="glass-card p-8 flex flex-col justify-center text-center border-b-4 border-orange-500">
+                    <p class="text-5xl font-black text-slate-800 mb-4 tracking-tighter">62,0 MM</p>
+                    <div class="h-px w-16 bg-orange-300 mx-auto mb-4"></div>
+                    <p class="text-base font-medium text-slate-600 leading-snug">Audiência total analisada no Terra Brasil.</p>
+                </div>
+                <div class="glass-card p-8 flex flex-col justify-center text-center border-b-4 border-pink-500">
+                    <p class="text-5xl font-black text-slate-800 mb-4 tracking-tighter">44,0 MM</p>
+                    <div class="h-px w-16 bg-pink-300 mx-auto mb-4"></div>
+                    <p class="text-base font-medium text-slate-600 leading-snug">Público adulto (35+) que prioriza conforto e "casual chic".</p>
+                </div>
+                <div class="glass-card p-8 flex flex-col justify-center text-center border-b-4 border-teal-500">
+                    <p class="text-5xl font-black text-slate-800 mb-4 tracking-tighter">37,0 MM</p>
+                    <div class="h-px w-16 bg-teal-300 mx-auto mb-4"></div>
+                    <p class="text-base font-medium text-slate-600 leading-snug">Valorizam estilo e design tanto quanto a qualidade.</p>
+                </div>
+                <div class="glass-card p-8 flex flex-col justify-center text-center">
+                    <p class="text-5xl font-black text-slate-800 mb-4 tracking-tighter">31,2 MM</p>
+                    <p class="text-sm font-bold uppercase text-orange-500 mb-2">Cross-sell</p>
+                    <p class="text-base text-slate-600 leading-snug">Usuários de protetor solar (Oportunidade no checkout).</p>
+                </div>
+                <div class="glass-card p-8 flex flex-col justify-center text-center">
+                    <p class="text-5xl font-black text-slate-800 mb-4 tracking-tighter">29,2 MM</p>
+                    <p class="text-sm font-bold uppercase text-purple-500 mb-2">Influência</p>
+                    <p class="text-base text-slate-600 leading-snug">"Influenciadores de Moda" (Boca a boca poderoso).</p>
+                </div>
+                <div class="glass-card p-8 flex flex-col justify-center text-center">
+                    <p class="text-5xl font-black text-slate-800 mb-4 tracking-tighter">26,0 MM</p>
+                    <p class="text-sm font-bold uppercase text-yellow-500 mb-2">Cartão Riachuelo</p>
+                    <p class="text-base text-slate-600 leading-snug">Preferem parcelar suas compras.</p>
+                </div>
+                <div class="glass-card p-8 flex flex-col justify-center text-center bg-orange-50">
+                    <p class="text-5xl font-black text-orange-600 mb-4 tracking-tighter">22,7 MM</p>
+                    <p class="text-base font-bold text-slate-700 leading-snug">Gostam de Carnaval.</p>
+                </div>
+                <div class="glass-card p-8 flex flex-col justify-center text-center">
+                    <p class="text-5xl font-black text-slate-800 mb-4 tracking-tighter">18,5 MM</p>
+                    <p class="text-base text-slate-600 leading-snug">Compradores por impulso (Foco em acessórios).</p>
+                </div>
+                <div class="glass-card p-8 flex flex-col justify-center text-center bg-yellow-50">
+                    <p class="text-5xl font-black text-yellow-600 mb-4 tracking-tighter">17,7 MM</p>
+                    <p class="text-base font-bold text-slate-700 leading-snug">Compraram chinelos/sandálias (L12M).</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="reveal-on-scroll">
+            <h2 class="text-3xl font-bold text-slate-800 mb-8 flex items-center gap-3">
+                <span class="text-3xl">👥</span> A Persona do Folião
+            </h2>
+            
+            <div class="flex flex-col lg:flex-row gap-8">
+                <div class="lg:w-1/3 relative h-[400px] lg:h-auto rounded-3xl overflow-hidden shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1551972873-b7e8754e8e26?q=80&w=1974&auto=format&fit=crop" alt="Mulher no Carnaval" class="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+                    
+                    <div class="absolute bottom-0 left-0 w-full h-20 overflow-hidden relative">
+                         <img src="https://images.unsplash.com/photo-1556742049-0c63d700165b?q=80&w=2070&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover object-center opacity-70">
+                         <div class="absolute inset-0 bg-black/50"></div>
+                         <div class="relative z-10 p-4 h-full flex items-center">
+                              <p class="text-white font-bold text-lg shadow-sm">A Decisora da Família</p>
+                         </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-2/3 space-y-6">
+                    <div class="glass-card p-8">
+                        <h3 class="text-2xl font-bold text-pink-600 mb-2">1. A Mulher como "Diretora" (33,5 MM)</h3>
+                        <p class="text-slate-600 leading-relaxed mb-4">
+                            Embora o público seja equilibrado, a mulher é quem orquestra a compra de verão da família (moda infantil, casa e marido).
+                            <br><br>
+                            <strong>Ação:</strong> A comunicação deve falar com essa mulher que "monta a mala de viagem", oferecendo praticidade.
+                        </p>
+                    </div>
+
+                    <div class="glass-card p-8">
+                        <h3 class="text-2xl font-bold text-orange-600 mb-2">2. Folião Maduro (45+ anos: 27,6 MM)</h3>
+                        <p class="text-slate-600 leading-relaxed mb-4">
+                            O maior volume está no público 45+, que busca roupas frescas e confortáveis para receber em casa e churrascos, fugindo do estereótipo de "apenas jovens".
+                        </p>
+                        <div class="p-4 bg-orange-100 rounded-xl border border-orange-200">
+                            <p class="text-sm text-orange-800 font-semibold">📌 Insight: A linha Casual Chic deve ser direcionada aqui.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="glass-card p-6 border-l-8 border-purple-500 bg-[url('https://images.unsplash.com/photo-1590487313853-764951475c44?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center relative overflow-hidden group">
+                    <div class="absolute inset-0 bg-white/90 group-hover:bg-white/95 transition-all"></div>
+                    <div class="relative z-10">
+                        <h4 class="text-xl font-black text-purple-700 uppercase mb-2">Sudeste (26,5 MM)</h4>
+                        <p class="text-slate-700 font-bold">O Carnaval Urbano</p>
+                        <p class="text-sm text-slate-600 mt-2">Moda urbana, streetwear. Roupas que transitem entre o metrô e a festa.</p>
+                    </div>
+                </div>
+                
+                <div class="glass-card p-6 border-l-8 border-yellow-500 bg-[url('https://images.unsplash.com/photo-1519671482538-eb62635ca266?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center relative overflow-hidden group">
+                     <div class="absolute inset-0 bg-white/90 group-hover:bg-white/95 transition-all"></div>
+                     <div class="relative z-10">
+                        <h4 class="text-xl font-black text-yellow-600 uppercase mb-2">Nordeste (17,9 MM)</h4>
+                        <p class="text-slate-700 font-bold">Raiz e Praias</p>
+                        <p class="text-sm text-slate-600 mt-2">Calor intenso. Tecidos leves, proteção UV e moda praia ostensiva.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reveal-on-scroll">
+            <h2 class="text-3xl font-bold text-slate-800 mb-8 flex items-center gap-3">
+                <span class="text-3xl">👗</span> O Mix Vencedor ("Look Completo")
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="glass-card overflow-hidden">
+                    <div class="h-40 bg-gray-100 relative">
+                        <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=2083&auto=format&fit=crop" class="w-full h-full object-cover opacity-90">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-4">
+                            <h3 class="text-white font-bold text-lg">Vestido</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-2xl font-black text-slate-800">10,4 MM</p>
+                        <p class="text-sm text-slate-500 mb-2">Vence a Saia</p>
+                        <p class="text-sm text-slate-700">Peça-chave pela praticidade de "look único".</p>
+                    </div>
+                </div>
+
+                <div class="glass-card overflow-hidden">
+                     <div class="h-40 bg-gray-100 relative">
+                        <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=1973&auto=format&fit=crop" class="w-full h-full object-cover opacity-90">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-4">
+                            <h3 class="text-white font-bold text-lg">Jeans Verão</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-2xl font-black text-slate-800">Encurtou</p>
+                        <p class="text-sm text-slate-500 mb-2">Shorts & Destroyed</p>
+                        <p class="text-sm text-slate-700">O jeans não morre, ele vira short. Foco em calças destroyed para a noite.</p>
+                    </div>
+                </div>
+
+                <div class="glass-card overflow-hidden">
+                     <div class="h-40 bg-gray-100 relative">
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=2080&auto=format&fit=crop" class="w-full h-full object-cover opacity-90">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-4">
+                            <h3 class="text-white font-bold text-lg">Básico Masc.</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-2xl font-black text-slate-800">16,2 MM</p>
+                        <p class="text-sm text-slate-500 mb-2">T-Shirts</p>
+                        <p class="text-sm text-slate-700">O homem renova o "uniforme". Camisetas de tecidos frescos.</p>
+                    </div>
+                </div>
+
+                <div class="glass-card overflow-hidden">
+                     <div class="h-40 bg-gray-100 relative">
+                        <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover opacity-90">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-4">
+                            <h3 class="text-white font-bold text-lg">Beleza Pós-Sol</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-2xl font-black text-slate-800">35,8 MM</p>
+                        <p class="text-sm text-slate-500 mb-2">Hidratação</p>
+                        <p class="text-sm text-slate-700">Grande oportunidade de venda adicional na loja de roupas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reveal-on-scroll">
+            <h2 class="text-3xl font-bold text-slate-800 mb-8 flex items-center gap-3">
+                <span class="text-3xl">🛍️</span> Comportamento & Loja
+            </h2>
+            
+            <div class="glass-card p-8 bg-gradient-to-r from-white to-orange-50">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div>
+                        <div class="flex items-center justify-between mb-2">
+                            <h4 class="font-bold text-slate-700 text-lg">Webrooming</h4>
+                            <span class="text-xs px-2 py-1 bg-slate-200 rounded">App como Vitrine</span>
+                        </div>
+                        <div class="text-4xl font-black text-slate-800 mb-2">50,6 MM</div>
+                        <div class="data-bar-bg"><div class="data-bar-fill bg-teal-500" style="width: 80%"></div></div>
+                        <p class="text-sm text-slate-600 mt-2">Pesquisam online, mas fecham na loja física pela segurança.</p>
+                    </div>
+
+                    <div>
+                        <div class="flex items-center justify-between mb-2">
+                            <h4 class="font-bold text-slate-700 text-lg">Fidelidade vs. Preço</h4>
+                            <span class="text-xs px-2 py-1 bg-red-100 text-red-600 rounded">Alerta</span>
+                        </div>
+                        <div class="flex gap-4 items-end">
+                            <div>
+                                <span class="text-4xl font-black text-slate-800">48,8 MM</span>
+                                <span class="text-xs block text-slate-500">Leais</span>
+                            </div>
+                            <div class="text-2xl text-slate-400">vs</div>
+                            <div>
+                                <span class="text-4xl font-black text-red-500">39,0 MM</span>
+                                <span class="text-xs block text-slate-500">Traem por oferta</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex items-center justify-between mb-2">
+                            <h4 class="font-bold text-slate-700 text-lg">Customização</h4>
+                            <span class="text-xs px-2 py-1 bg-yellow-100 text-yellow-700 rounded">Upsell</span>
+                        </div>
+                        <div class="text-4xl font-black text-slate-800 mb-2">27,7 MM</div>
+                        <div class="data-bar-bg"><div class="data-bar-fill bg-yellow-500" style="width: 45%"></div></div>
+                        <p class="text-sm text-slate-600 mt-2">Pagariam mais para personalizar (Abadás/Jeans).</p>
+                    </div>
+
+                    <div>
+                        <div class="flex items-center justify-between mb-2">
+                            <h4 class="font-bold text-slate-700 text-lg">Patriotismo Econômico</h4>
+                            <span class="text-xs px-2 py-1 bg-green-100 text-green-700 rounded">🇧🇷 Brasil</span>
+                        </div>
+                        <div class="text-4xl font-black text-slate-800 mb-2">48,1 MM</div>
+                        <div class="data-bar-bg"><div class="data-bar-fill bg-green-500" style="width: 78%"></div></div>
+                        <p class="text-sm text-slate-600 mt-2">Preferem produtos nacionais. Diferencial competitivo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reveal-on-scroll border-t border-slate-200 pt-10 pb-10">
+            <h3 class="text-xl font-bold text-orange-500 mb-6 uppercase tracking-widest">Deep Dive: Segmentos & Estratégia</h3>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <div class="glass-card p-6">
+                    <h4 class="font-bold text-slate-800 border-b pb-2 mb-4">Moda Praia & Casual</h4>
+                    <ul class="space-y-4">
+                        <li class="flex justify-between"><span class="text-slate-600">Chinelos/Sandálias</span><span class="font-bold text-slate-900">17,7 MM</span></li>
+                        <li class="flex justify-between"><span class="text-slate-600">Bermudas/Shorts</span><span class="font-bold text-slate-900">17,5 MM</span></li>
+                        <li class="flex justify-between"><span class="text-slate-600">Biquínis/Sungas</span><span class="font-bold text-slate-900">7,4 MM</span></li>
+                    </ul>
+                </div>
+                <div class="glass-card p-6">
+                    <h4 class="font-bold text-slate-800 border-b pb-2 mb-4">Moda Infantil</h4>
+                    <ul class="space-y-4">
+                        <li class="flex justify-between"><span class="text-slate-600">Chinelos Infantis</span><span class="font-bold text-slate-900">11,0 MM</span></li>
+                        <li class="flex justify-between"><span class="text-slate-600">Camisas/Blusas</span><span class="font-bold text-slate-900">10,9 MM</span></li>
+                    </ul>
+                </div>
+                <div class="glass-card p-6">
+                    <h4 class="font-bold text-slate-800 border-b pb-2 mb-4">Moda Fitness</h4>
+                    <ul class="space-y-4">
+                        <li class="flex justify-between"><span class="text-slate-600">Praticantes Esportes</span><span class="font-bold text-slate-900">10,2 MM</span></li>
+                        <li class="flex justify-between"><span class="text-slate-600">Roupas Ginástica</span><span class="font-bold text-slate-900">7,5 MM</span></li>
+                    </ul>
+                </div>
+            </div>
+             <div class="mt-6 glass-card p-6 bg-pink-50 border border-pink-200">
+                <div class="flex flex-col md:flex-row gap-6 items-center">
+                    <div class="w-full md:w-1/4 text-center"><span class="text-4xl">👙</span><p class="font-bold text-pink-700 mt-2">O Mercado Invisível</p></div>
+                    <div class="w-full md:w-3/4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div><p class="font-bold text-slate-800 text-lg">13,4 MM <span class="text-sm font-normal text-slate-500">Lingerie</span></p><p class="text-sm text-slate-600">Sutiã "invisível" para tops de Carnaval.</p></div>
+                        <div><p class="font-bold text-slate-800 text-lg">12,4 MM <span class="text-sm font-normal text-slate-500">Cuecas</span></p><p class="text-sm text-slate-600">Add-on fácil no caixa. Anti-assaduras.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reveal-on-scroll pb-20">
+            <h2 class="text-3xl font-bold text-slate-800 mb-8 flex items-center gap-3">
+                <span class="text-3xl">🚀</span> Insights Acionáveis
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="glass-card p-6 bg-white border-t-4 border-red-500">
+                    <h4 class="font-bold text-slate-800 mb-2">Medo Cibernético (47,6 MM)</h4>
+                    <p class="text-sm text-slate-600">Preocupam-se com segurança online. Ação: Reforçar "Compra segura" e "Troca na Loja".</p>
+                </div>
+                <div class="glass-card p-6 bg-white border-t-4 border-green-500">
+                    <h4 class="font-bold text-slate-800 mb-2">WhatsApp da Loja (35,5 MM)</h4>
+                    <p class="text-sm text-slate-600">Aceitam compra direta. Ação: Vendedores como "consultores digitais".</p>
+                </div>
+                <div class="glass-card p-6 bg-white border-t-4 border-slate-500">
+                    <h4 class="font-bold text-slate-800 mb-2">Agnóstico de Marca (32,5 MM)</h4>
+                    <p class="text-sm text-slate-600">Não ligam para logo. Ação: Focar em atributos (cor, corte) em vez de branding.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center py-10 border-t border-slate-200 text-slate-400 text-xs">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Terra_Logo.png" alt="Terra" class="h-8 mx-auto mb-4 opacity-100">
+            <p class="mb-2">© 2025 Pesquisa Defesa Comercial • Estratégia Riachuelo Verão/Carnaval</p>
+            <p>Dados baseados em audiência e clusterização comportamental.</p>
+        </footer>
+
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        
+                        const bars = entry.target.querySelectorAll('.data-bar-fill');
+                        bars.forEach(bar => {
+                            const width = bar.style.width;
+                            bar.style.width = '0';
+                            setTimeout(() => {
+                                bar.style.width = width;
+                            }, 100);
+                        });
+
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            const sections = document.querySelectorAll('.reveal-on-scroll');
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
